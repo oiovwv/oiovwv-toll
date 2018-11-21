@@ -1,0 +1,27 @@
+.el-table{
+	margin:0 auto; 
+}
+.print-table-expand label {
+	width: 30%;
+}
+.el-form-item__content{
+	width: 70%;
+	background: #eee;
+}
+.print-table-expand .el-form-item {
+	margin-right: 0;
+	width: 33%;
+	border: 1px solid #f4f4f4;
+	margin-bottom: 4px;
+	padding-left: 10px;
+}
+#print /deep/ .el-table__expanded-cell[class*=cell]{
+	padding: 10px 15px;
+}
+.el-button--success{
+	background: #007f7b;
+	border-color: #007f7b;
+}
+.el-button--success:hover{
+	background: #4CBAB4;
+}

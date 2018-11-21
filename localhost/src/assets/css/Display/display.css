@@ -1,0 +1,159 @@
+.header .el-row,.main,.foot{
+  width: 100%;
+}
+.header .el-row{
+  height: 60px;
+  background: #007f7b;
+  display: flex;
+}
+.site_time{
+  line-height: 60px;
+  font-size: 23px;
+}
+.explain{
+  height: 100%;
+  display: flex;
+}
+.explain>div:first-child,.site_time,
+.explain>div:last-child>div>span:last-child,
+.foot,.main table th{
+  color: #fff;
+  font-weight: bold;
+}
+.explain>div:first-child{
+  font-size: 20px;
+  width: 27%;
+  line-height: 60px;
+}
+.explain>div:last-child{
+  width: 70%;
+}
+.explain>div:last-child>div>span{
+  display: inline-block;
+}
+.explain>div:last-child>div>span:first-child{
+  width: 20%;
+  height:15px;
+  position: relative;
+  top: 2px;
+}
+.warn{
+  background: #ff002f;
+}
+.normal{
+  background: #249D9D;
+}
+.explain>div:last-child>div>span:last-child{
+  font-size: 15px;
+}
+.explain>div:last-child>div:first-child,img{
+  margin-top: 10px;
+}
+.foot{
+  height: 35px;
+  line-height: 35px;
+  background: #007f7b;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}
+.main{
+  overflow-y:scroll; 
+}
+.main table{
+  width: 96%;
+  margin:15px auto 0;
+  border:2px solid #666;
+  border-collapse: collapse;
+}
+.main table th{
+  background: #007f7b;
+  width: 4%;
+  padding: 10px 0;
+}
+.main table td,.main table th{
+  text-align: center;
+  font-size: 20px;
+  border-bottom: 2px solid #333;
+  border-right: 2px solid #333;
+}
+.main tbody td{
+  padding:5px 0;
+  font-weight:bold;
+}
+.main tbody:nth-child(even) tr{
+  background: #0FAAA5;
+  color:#fff;
+}
+.main tbody:nth-child(odd) tr{
+  background: #fff;
+  color: #007f7b;
+}
+.client{
+  font-size: 22px;
+  font-weight: bolder;
+}
+.is_warning{
+  color:#ff002f;
+  cursor: pointer;
+}
+.weather{
+  position: fixed;
+  left: 5px;
+  top: 40%;
+  z-index: 400;
+  width: 20px;
+  text-align: center;
+}
+.weather>div{
+  background: #007f7b;
+  color: #fff;
+  font-size: 14px;
+  padding: 2px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.weather>div:first-child{
+  margin-bottom:10px;
+}
+.same{
+  width: 4%;
+}
+.main td.pagination{
+  text-align: right;
+  padding-right: 10px;
+}
+.el-pagination.is-background .el-pager li:not(.disabled).active{
+  background: #007f7b;
+}
+
+/*天气表格*/
+.el-dialog{
+  width: 80%;
+  margin-top: 10vh !important;
+}
+.el-dialog__header{
+  border-bottom: 1px solid #eee;
+  padding: 10px 20px;
+}
+.el-dialog__headerbtn{
+  top:14px;
+}
+.el-dialog__body{
+  display: flex;
+}
+.el-dialog__body>div:first-child{
+  width: 75%;
+  margin-right: 15px;
+}
+#weather{
+  width: 100%;
+  height: 600px;
+}
+.el-dialog__body table{
+  border-collapse: collapse;
+}
+.el-dialog__body table th,.el-dialog__body table td{
+  padding: 5px 10px;
+  text-align: center;
+}

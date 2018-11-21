@@ -1,0 +1,65 @@
+.condition,.condition>div,.button_box>div{
+    display: flex;
+}
+.condition{
+    line-height: 40px;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+.condition:last-child{
+    margin-bottom: 10px;
+}
+.condition>div{
+    width: 48%;
+}
+.condition>div>span{
+    margin-right: 20px;
+    font-weight: bold;
+}
+.condition>div>.el-select,.el-date-editor{
+    flex-grow: 1;
+}
+.content_box{
+	margin:15px 0 20px;
+    border-color:#d2d6de;
+}
+.content_box>div{
+	padding: 10px;
+}
+.content_box>div:first-child{
+	font-size: 16px;
+	color: #444;
+    border-bottom: 1px solid #f4f4f4;
+}
+.content_box>div:last-child{
+	min-height: 623px;
+}
+.content_box /deep/ .el-table td, 
+.content_box /deep/.el-table th{
+	padding: 8px 0;
+}
+.pagination{
+	margin-bottom: 18px;
+}
+.pagination .el-pagination{
+    text-align: center;
+}
+
+.el-table__body .highlight:hover>td{
+    background: rgb(2, 189, 188) !important;
+}
+.highlight>td{
+    border-right: none;
+}
+
+.button_box{
+    padding-left: 75px;
+    box-sizing: border-box;
+}
+.button_box>div{
+    width: 100%;
+    justify-content: space-between;
+}
+.button_box>div>.el-button{
+    width: 48%;
+}

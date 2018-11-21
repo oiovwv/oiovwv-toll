@@ -1,0 +1,53 @@
+.ct_box{
+	min-height: 712px;
+	border-color: #d2d6de;
+	padding: 10px;
+	margin-bottom: 15px; 
+}
+.ct_box_header>div{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+.ct_box_header>div>div{
+	width: 48%;
+}
+.label{
+	font-weight: 700;
+	margin:0 0 10px;
+}
+.header_row:first-child>div:first-child .el-select{
+	width: 100%;
+}
+.header_row:first-child>div:last-child .el-select{
+	width: 80%;
+}
+.header_row:first-child>div:last-child .el-button{
+	width: 19%;
+}
+.header_row:last-child>div:first-child .el-select{
+	width: 49%;
+}
+.header_row:last-child>div:first-child .el-select:nth-child(2){
+	margin-right: 7px;
+}
+.header_row:last-child>div:last-child .el-button{
+	margin-top: 28px;
+	width: 100%;
+}
+.header_row .el-button,.ct_box_body .el-button{
+	background: rgb(76,186,180);
+	border-color: rgb(0,127,123);
+	color: #fff;
+}
+.header_row .el-button:hover,.ct_box_body .el-button:hover{
+	background:rgb(0,127,123);
+}
+.ct_box_body .el-table{
+	width: 98%;
+	text-align: center;
+	margin: 20px auto;
+}
+.ct_box_body .el-table td{
+	padding: 8px 0;
+}

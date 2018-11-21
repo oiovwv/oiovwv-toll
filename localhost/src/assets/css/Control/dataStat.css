@@ -1,0 +1,133 @@
+.el-collapse{
+  border-top:3px solid #4cbab4;
+  box-shadow: 0 1px 1px rgba(0,0,0,.1); 
+  border-radius:3px;
+  margin-bottom: 15px;
+  background: #fff;
+}
+.main_box /deep/ .el-collapse-item__header,.main_box /deep/  .el-collapse-item__content{
+  padding: 10px;
+}
+.main_box /deep/ .el-collapse-item__header{
+  height: 40px;
+  line-height: 25px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f4f4f4;
+}
+.main_box /deep/ .el-collapse-item__arrow{
+  margin-top: -15px;
+}
+.el-collapse-item__content>div{
+  display:inline-block;
+  margin: 0 15px;
+}
+.el-collapse-item__content>div>span{
+  margin-right: 5px;
+}
+.el-button{
+  border-color:rgb(0,127,123); 
+  background: rgb(76,186,180);
+  color:#fff;
+}
+.el-button:hover{
+  background: #007F7B;
+  color:#fff;
+}
+.el-table .cell{
+  text-align: center;
+}
+.el-table td{
+  padding: 8px 0;
+}
+
+
+/*edit*/
+.el-button:focus{
+  background: rgb(76,186,180);
+  border-color: rgb(0,127,123);
+  color: #fff;
+}
+.unlock{
+  background: #00c0ef;
+  border-color: #00acd6;
+}
+.unlock:hover,.unlock:focus{
+  background: #00acd6;
+  border-color: #269abc;
+}
+.edit_data{
+  border:1px solid #999;
+}
+.tr{
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #999;
+}
+.tr:last-child{
+  border-bottom: none;
+}
+.title,.edit_data>div:first-child{
+  background: #007f7b;
+  color: #fff;
+  overflow: hidden;
+}
+.title{
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+  padding:0 8px;
+  border-bottom: 1px solid #999;
+}
+.edit_data>div:first-child{
+  border-bottom: 1px solid #999;
+}
+.edit_data,.edit_data>div{
+  width: 100%;
+}
+.edit_data .td{
+  float: left;
+  height: 100%;
+  line-height: 40px;
+  padding: 0 1px;
+  text-align: center;
+  vertical-align: middle;
+  border-right: 1px solid #999;
+  box-sizing: border-box;
+}
+.td:first-child,.td:nth-child(6){
+  width: 5%;
+}
+.td:nth-child(2){
+  width: 20%;
+}
+.td:nth-child(3),.stat .td:nth-child(2){
+  width: 25%;
+}
+.td:nth-child(2),.td:nth-child(3){
+  text-overflow: ellipsis;;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.td:nth-child(4),.td:nth-child(5),.td:nth-child(7){
+  width: 10%;
+}
+.td:last-child{
+  width: 14.9%;
+  border-right: none;
+}
+
+.stat .td:nth-child(3){
+  width: 30%;
+}
+.edit_data /deep/ .el-input__inner{
+  width: 85%;
+  height: 32px;
+  line-height: 32px;
+  border-color: red;
+}
+
+.sub_title .td:last-child{
+  width: 95%;
+  text-align: left;
+  padding-left: 5px;
+}

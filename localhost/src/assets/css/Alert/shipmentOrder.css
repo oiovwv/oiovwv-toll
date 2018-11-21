@@ -1,0 +1,156 @@
+.order_menu{
+  border: none;
+}
+.menu_button{
+  border-bottom: 1px solid #f4f4f4;
+}
+.menu_button>div{
+  display: inline-block;
+  padding: 8px 10px;
+  width: 125px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  box-sizing: border-box;
+  color:#444;
+}
+.menu_button>div:not(.active):hover{
+  cursor: pointer;
+  color:#999;
+}
+.menu_button>div.active{
+  color:#fff;
+  background-color: rgb(0,127,123);
+}
+.menu_button>div>div{
+  margin:5px 0;
+}
+.menu_content{
+  padding: 10px;
+}
+.menu_content>div{
+  display: inline-block;
+  width: 31%;
+  padding: 0 10px;
+  border-right: 1px solid #f4f4f4;
+}
+.menu_content>div:not(:first-child){
+  overflow-y: scroll;
+}
+.menu_content>div:last-child{
+  border-right: none;
+}
+.row_checked{
+  background: #FEF589;
+}
+
+.menu_content .iconfont:focus{
+  outline: none;
+  color: #72afd2;
+}
+
+.menu_content>div table{
+  width: 100%;
+  border-collapse:collapse;
+}
+.menu_content>div tr td{
+  font-size: 14px;
+  padding: 8px;
+  text-align: center;
+  
+}
+.menu_content>div tr td,.order_title{
+border-bottom: 1px solid #f4f4f4;
+
+}
+.menu_content>div tr td:first-child{
+  width: 40%;
+}
+.menu_content>div tr td:not(:first-child){
+  width: 20%;
+}
+.menu_content>div tr td:nth-child(2),
+.menu_content>div tr td:nth-last-child(2),
+.menu_content>div tr td:last-child{
+  cursor: pointer;
+  color:rgb(0,127,123);
+}
+.menu_content>div tr td:nth-child(2):hover,
+.menu_content>div tr td:nth-last-child(2):hover,
+.menu_content>div tr td:last-child:hover{
+  color: #72afd2;
+}
+
+.order_main{
+  min-height: 425px;
+  margin-bottom: 15px;
+  border-top: 3px solid rgb(76,186,180);
+}
+.order_title{
+  padding: 10px;
+  font-size: 16px;
+  color: #444;
+}
+.badge{
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  margin-right: 5px;
+  background: rgb(0,127,126) !important;
+  border-radius:10px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px; 
+  white-space:nowrap;
+}
+
+/*表格树*/
+.tree_item table{
+    width: 100%;
+    height: 32px;
+}
+.tree_item table tr:hover{
+  background: #f5f5f5;
+}
+.leve td:first-child,.tree_table th>div:first-child,
+.leve td:nth-child(3),.tree_table th>div:nth-child(3),
+.leve td:nth-child(7),.tree_table th>div:nth-child(7),
+.leve td:nth-child(8),.tree_table th>div:nth-child(8),
+.leve td:nth-child(9),.tree_table th>div:nth-child(9),
+.leve td:nth-child(10),.tree_table th>div:nth-child(10),
+.leve td:nth-child(11),.tree_table th>div:nth-child(11),
+.leve td:last-child,.tree_table th>div:last-child{
+  width: 10%;
+}
+.leve td:nth-child(2),.tree_table th>div:nth-child(2),
+.leve td:nth-child(4),.tree_table th>div:nth-child(4),
+.leve td:nth-child(5),.tree_table th>div:nth-child(5),
+.leve td:nth-child(6),.tree_table th>div:nth-child(6){
+  width: 5%;
+}
+.tree_node{
+  color: rgb(0,127,123);
+}
+
+
+.iomr{
+  min-height: 300px;
+  border-color: rgb(76,186,180);
+  margin-bottom:10px;
+  padding-bottom: 5px; 
+}
+.iomr_header{
+  padding: 10px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.el-table{
+  width: 99%;
+  margin: 0 auto;
+}
+.iomr_footer{
+  margin-top: 5px;
+}
+.el-pagination{
+  text-align: right;
+}
