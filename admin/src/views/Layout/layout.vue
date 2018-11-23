@@ -3,9 +3,12 @@
         <div v-if="device==='mobile'&&sidebar.opened" class="drawer-bg" @click="handleClickOutside"/>
         <sidebar class="sidebar-container"/>
         <div class="main-container">
-            <nav-bar/>
-            <tags-view/>
-            <app-main/>
+            <el-scrollbar>
+                <nav-bar/>
+                <tags-view/>
+                <app-main/>
+            </el-scrollbar>
+            
         </div>
     </div>    
 </template>
@@ -43,7 +46,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "../../assets/styles/mixin.scss";
-    
+    .main-container,.el-scrollbar{
+        height: 100%;
+    }
     .app-wrapper {
         @include clearfix;
         position: relative;

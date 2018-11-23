@@ -7,7 +7,7 @@ import qs from 'qs'
 //前端会根据token再去拉取一个user_info 的接口来获取用户的详细信息（如用户权限，用户名等等信息）
 
 
-export const loginByUsername=(userName,password)=>
+export const loginByUsername=(userName,password,isEKP)=>
     request({
         url:'/token',
         method:'POST',
@@ -16,7 +16,7 @@ export const loginByUsername=(userName,password)=>
             'Content-Type': 'application/json;charset=UTF-8'
         },
         data:{
-            userName, password
+            userName,password,isEKP
         }
     })
 

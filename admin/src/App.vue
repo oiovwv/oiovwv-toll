@@ -29,4 +29,10 @@ body{
   display: flex;
   justify-content: space-between;
 }
+.main_content{
+  width: 100%;
+  min-height:calc(100vh - 84px);
+  padding: 15px;
+  background: #ecf0f5;
+}
 </style>

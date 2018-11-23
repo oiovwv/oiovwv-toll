@@ -33,6 +33,17 @@
                 </span>
             </el-form-item>
 
+            <el-form-item class="checked_box">
+                <el-row>
+                    <el-col :xs="{span:24}">
+                        <el-checkbox v-model="loginForm.isEKP">{{$t('login.EKP')}}</el-checkbox>
+                    </el-col>
+                    <!-- <el-col :xs="{span:24}" :sm="{span:4}">
+                        <span>忘记密码</span>
+                    </el-col> -->
+                </el-row>
+            </el-form-item>
+
             <el-button :loading="loading" type="primary" style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">
                 {{ $t('login.logIn') }}
             </el-button>    
@@ -75,7 +86,8 @@ export default {
         return {
             loginForm:{
                 username:'',
-                password:''
+                password:'',
+                isEKP:false
             },
             loginRules:{
                 username: [{ required: true, trigger: 'blur', validator: validateUsername }],
@@ -159,7 +171,29 @@ $light_gray:#eee;
                 color: #fff;
                 height: 46px;
             }
-        }  
+            /deep/ .el-checkbox{
+                color: #C0C4CC;
+            }
+            /deep/ .el-checkbox__input.is-checked+.el-checkbox__label{
+                color:#4CBAB4;
+            }
+            /deep/ .el-checkbox__input.is-checked .el-checkbox__inner, 
+            /deep/ .el-checkbox__input.is-indeterminate .el-checkbox__inner,
+            /deep/ .el-checkbox__inner:hover{
+                border-color: #4CBAB4;
+            }
+            /deep/ .el-checkbox__input.is-checked .el-checkbox__inner, 
+            /deep/ .el-checkbox__input.is-indeterminate .el-checkbox__inner{
+                background: #4CBAB4;
+            }
+            
+        }
+        .el-form-item.checked_box{
+            border:none;
+            border-radius: 0;
+            background: none;
+            color: #C0C4CC;
+        }
     }
     .tips {
         font-size: 14px;

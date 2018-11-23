@@ -4,7 +4,8 @@
         title:'Toll Web Platform',
         username: '账号',
         password: '密码',
-        logIn:'登录'
+        logIn:'登录',
+        EKP:'使用EKP账户'
     },
     navbar: {
         logOut: '退出登录',
@@ -34,7 +35,21 @@
         chevron_trace:'订单追踪',
         chevron_finance:'财务数据',
         supplier:'供应商相关查询',
-        supplier_order_query:'订单查询'
+        supplier_order_query:'订单查询',
+        supplier_order_detail:'订单详情'
+    },
+    tollWay:{
+        title:'拓领的方式',
+        satefy:'安全',
+        satefyInfo:'安全是支撑我们每一个工作的基础',
+        improve:'持续改进',
+        improveInfo:'持续实现进步',
+        frankly:'坦诚透明',
+        franklyInfo:'我们如何互相对待',
+        team:'团队协作',
+        teamInfo:'一个拓领，一个目标。',
+        trust:'正直与信任',
+        trustInfo:'时时刻刻保持有道德的行为',
     }
 }
 

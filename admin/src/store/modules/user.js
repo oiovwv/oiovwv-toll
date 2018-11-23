@@ -30,7 +30,7 @@ const user={
         LoginByUsername({commit},userInfo){
             const username=userInfo.username.trim()
             return new Promise((resolve,reject)=>{
-                loginByUsername(username,userInfo.password).then(res=>{
+                loginByUsername(username,userInfo.password,userInfo.isEKP).then(res=>{
                     const result=res.data.result
                     commit('SET_TOKEN',result.token)
                     setToken(result.token)
@@ -44,7 +44,7 @@ const user={
         GetUserInfo({commit,state}){    
             return new Promise((resolve,reject)=>{   
                 getUserInfo(state.token).then(res=>{
-                    console.log(res.data.result)
+                    // console.log(res.data.result)
                     if(res.data.result){
                         // if(res.data.result.roles.length&&res.data.result.roles.length>0){
                         //     commit('SET_ROLES',res.data.result.roles)

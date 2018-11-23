@@ -3,7 +3,8 @@ const en= {
         title:'Toll Web Platform',
         username: 'Username',
         password: 'Password',
-        logIn:'Login'
+        logIn:'Login',
+        EKP:'Use EKP Account'
     },
     navbar: {
         logOut: 'Log Out',
@@ -33,7 +34,21 @@ const en= {
         chevron_trace:'Order Trace',
         chevron_finance:'Finance Data',
         supplier:'Supplier Query',
-        supplier_order_query:'Supplier Order Query'
+        supplier_order_query:'Supplier Order Query',
+        supplier_order_detail:'Supplier Order Detail'
+    },
+    tollWay:{
+        title:'The Toll Way',
+        satefy:'Satefy',
+        satefyInfo:'Underpins everything we do',
+        improve:'Continuous improvement',
+        improveInfo:'Delivering continuous improvement',
+        frankly:'Being Open & transparent',
+        franklyInfo:'How we treat each other',
+        team:'Teamwork',
+        teamInfo:'One Toll,One Goal',
+        trust:'One Toll,One Goal',
+        trustInfo:'Behave ethically at all times',
     }
 }
 

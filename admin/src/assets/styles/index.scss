@@ -191,3 +191,12 @@ code {
 .multiselect--active {
   z-index: 1000 !important;
 }
+.boxes{
+  width: 100%;
+  border-top: 3px solid transparent;
+  border-radius: 3px;
+  background: #ffffff;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}

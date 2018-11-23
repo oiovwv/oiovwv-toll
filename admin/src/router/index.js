@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Layout from '@/views/Layout/layout'
+
+import constantChildrenRouter from './constantChildrenRouter'
 Vue.use(Router)
 
 //静态路由

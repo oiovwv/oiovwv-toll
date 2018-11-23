@@ -1,7 +1,7 @@
 import Cookies from 'js-cookie'
 const app={
     state:{
-        language: Cookies.get('language') || 'en',
+        language: Cookies.get('language') || 'zh',
         sidebar:{
             opened:!+Cookies.get('sidebarStatus'),
             withoutAnimation:false
